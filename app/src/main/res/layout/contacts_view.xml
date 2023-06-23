@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:background="@color/darkBg"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ContactsView">
+    <include layout="@layout/actionbar"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="180dp"
+                  android:background="@drawable/circle_shape"
+                  android:orientation="vertical"
+                  android:gravity="center"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/contacts"
+                  android:textColor="@color/primaryColor"
+                  android:textSize="35sp"
+                  android:fontFamily="sans-serif"
+                  android:textStyle="bold"
+                  android:letterSpacing="0.15"
+                  android:layout_marginTop="-50dp"
+                  android:textAllCaps="true"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAllCaps="true"
+                  android:textColor="@color/whiteDisabled"
+                  android:textSize="22sp"
+                  android:textStyle="bold"
+                  android:letterSpacing="0.15"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/counter"
+                  android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+        android:id="@+id/contacts_recyclerView"
+                  android:paddingTop="30dp"/>
+</LinearLayout>

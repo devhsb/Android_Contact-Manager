@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:background="@color/darkBg"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="180dp"
+                  android:background="@drawable/circle_shape"
+                  android:orientation="vertical"
+                  android:gravity="center"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/sweet"
+                  android:textColor="@color/primaryColor"
+                  android:textSize="51sp"
+                  android:fontFamily="sans-serif"
+                  android:textStyle="bold"
+                  android:letterSpacing="0.15"
+                  android:layout_marginTop="-30dp"
+                  />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/contacts"
+                  android:textAllCaps="true"
+                  android:textColor="@color/whiteDisabled"
+                  android:textSize="18sp"
+                  android:fontFamily="sans-serif"
+                  android:textStyle="bold"
+                  android:letterSpacing="0.15"
+                  android:layout_marginStart="40dp"
+        />
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                    android:gravity="center"
+                  android:orientation="vertical"
+    >
+
+
+        <Button android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="-80dp"
+                android:text="@string/enter_contact"
+                android:textColor="@color/darkBg"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/enter_contact_shape"
+                android:id="@+id/enterBtn"
+                />
+
+        <Button android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:text="@string/show_contacts"
+                android:textColor="@color/darkBg"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/show_contacts_shape"
+                android:id="@+id/showBtn"
+        />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

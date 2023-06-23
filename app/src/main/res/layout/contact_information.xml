@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:background="@color/darkBg"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ContactInformation">
+    <include layout="@layout/actionbar"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="180dp"
+                  android:background="@drawable/circle_shape"
+                  android:orientation="vertical"
+                  android:gravity="center"
+    >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/contact"
+                  android:textColor="@color/primaryColor"
+                  android:textSize="35sp"
+
+                  android:fontFamily="sans-serif"
+                  android:textStyle="bold"
+                  android:letterSpacing="0.15"
+                  android:layout_marginTop="-30dp"
+                  android:textAllCaps="true"
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/information"
+                  android:textColor="@color/whiteDisabled"
+                  android:textSize="18sp"
+                  android:fontFamily="sans-serif"
+                  android:textStyle="bold"
+                  android:letterSpacing="0.15"
+                  android:layout_marginStart="40dp"
+        />
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:orientation="vertical"
+    >
+
+
+        <EditText android:layout_width="300dp"
+                  android:layout_height="60dp"
+            android:textCursorDrawable="@drawable/cursor_white"
+                  android:background="@drawable/contact_info_shape"
+                  android:hint="@string/name"
+                  android:textColorHint="@color/whiteDisabled"
+                  android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+                  android:layout_marginTop="-70dp"
+                  android:id="@+id/enterName"
+                  android:textColor="@color/white"
+                android:inputType="textPersonName"
+        />
+
+        <EditText android:layout_width="300dp"
+                  android:layout_height="60dp"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:background="@drawable/contact_info_shape"
+                  android:hint="@string/phone_number"
+                  android:textColorHint="@color/whiteDisabled"
+                  android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+                  android:layout_marginTop="30dp"
+                  android:id="@+id/enterPhone"
+                  android:textColor="@color/white"
+            android:inputType="phone"
+        />
+
+        <Button android:layout_width="250dp"
+                android:layout_height="63dp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/darkBg"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/save_btn_shape"
+                android:id="@+id/save"
+        />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
