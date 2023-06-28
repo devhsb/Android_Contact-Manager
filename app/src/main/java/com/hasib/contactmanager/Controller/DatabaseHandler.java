@@ -1,19 +1,21 @@
 package com.hasib.contactmanager.Controller;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
 import androidx.annotation.Nullable;
+
 import com.hasib.contactmanager.Model.Contact;
 import com.hasib.contactmanager.Util.DBUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static android.content.ContentValues.TAG;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     public DatabaseHandler(@Nullable Context context) {
@@ -64,9 +66,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contact.setName(cursor.getString(1));
                 contact.setPhoneNumber(cursor.getString(2));
                 Log.d(TAG, "getContact: " + contact.getName() + " is here");
-                db.close();
                 cursor.close();
-                return contact;
+                db.close();
+            return contact;
         }
         db.close();
         return null;
@@ -86,8 +88,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 contacts.add(contact);
             }while (cursor.moveToNext());
         }
-        db.close();
         cursor.close();
+        db.close();
         return contacts;
     }
 

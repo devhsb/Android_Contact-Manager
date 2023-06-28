@@ -43,10 +43,9 @@
 
             <ImageButton android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:onClick="handleRemoveBtn"
                 android:src="@drawable/baseline_delete_forever_24"
                 android:background="@color/secondaryColor"
-                android:id="@+id/remove"
+                android:id="@+id/removeContactBtn"
                 android:contentDescription="@string/remove_button_desc" />
 
             <ImageButton android:layout_width="50dp"

@@ -11,4 +11,5 @@
     <string name="name">Name</string>
     <string name="information">Information</string>
     <string name="contact">Contact</string>
+    <string name="yes">YES</string>
 </resources>
